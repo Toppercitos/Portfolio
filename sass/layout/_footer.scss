@@ -1,18 +1,20 @@
 footer {
+    box-sizing: border-box;
+    scroll-snap-align: center;
      // Dimensions
      width: 100vw;
-     height: 10vh;
-     padding-right: 4%;
+     height: 6%;
+     padding: 2% 4%;
  
      //Position 
-     position:relative;
-     bottom: 10%;
+     position: relative;
+     bottom: 6%;
      display: flex;
      justify-content: flex-end;
      align-items: center;
 
      //Decorations
-     background-color: none;
+     background-color: blue;
 
      i {
         padding-left: 1rem;
