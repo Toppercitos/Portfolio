@@ -86,7 +86,7 @@
 nav {
   width: 100%;
   min-height: 6vh;
-  padding: 2% 4%;
+  padding: 4%;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -340,16 +340,15 @@ nav .icons i:hover {
 
 footer {
   box-sizing: border-box;
-  scroll-snap-align: center;
   width: 100vw;
   height: 6%;
-  padding: 2% 4%;
+  padding: 2% 4% 4% 0%;
   position: relative;
-  bottom: 6%;
+  bottom: 12%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: blue;
+  background-color: none;
 }
 footer i {
   padding-left: 1rem;
