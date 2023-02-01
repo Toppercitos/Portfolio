@@ -1,0 +1,33 @@
+.knowledge {
+
+
+    .knowledge_container {
+        box-sizing: border-box;
+        margin: 2rem;
+        padding: 0px;
+        width: 70%;
+        
+        h1{
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+            margin: 0px;
+        }
+
+        .list{
+            box-sizing: border-box;
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0px; 
+            padding: 1.5rem;
+        
+            i {
+                margin: 0px;
+                padding: 0px;
+                color: $secundary-color;
+            }
+        }
+    }
+}

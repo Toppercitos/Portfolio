@@ -1,0 +1,28 @@
+@import "variables";
+// For orientation of the sections
+
+@each $item in $sections{
+    @if ($item == "up-down"){
+        .#{$item}{
+            flex-direction: column;
+        }
+    }
+    @else{
+        .#{$item}{
+            flex-direction: row;
+        }
+    }
+}
+
+@each $item in $projects-data{
+    @if ($item == "on-left") {
+        .#{$item}{
+            padding: 0px 3rem 0px 1rem;
+        }
+    }
+    @else {
+        .#{$item}{
+            padding: 0px 1rem 0px 3rem;
+        }
+    }
+}

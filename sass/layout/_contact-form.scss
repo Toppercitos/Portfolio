@@ -1,0 +1,48 @@
+.contact {
+    background-color: $contact-background-color;
+
+    h1 {
+        padding: .2rem;
+        margin: .3rem;
+        color: $contact-principal-color;
+    }
+
+    form{
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .form-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: .5rem;
+
+            .input-group {
+                width: 100%;
+                margin: 1rem ;
+            }
+        }
+    }
+
+    label {
+        @include text($contact-principal-color, 700, $paragraph_size_1);
+
+    }
+
+    input, textarea {
+        width: 100%;
+        border: 0px;
+        border-radius: 15px;
+        padding: .5rem 1rem;
+        margin: 1rem 0px;
+
+        font-size: $paragraph_size_1;
+        font-family: monospace;
+    }
+    
+}

@@ -1,0 +1,15 @@
+.home {
+    justify-content: space-evenly;
+
+    h1 {
+        color: $neutral-color;
+
+        em {
+            color: $principal-color;
+        }
+    }
+
+    .home-container{
+        position: relative;
+    }
+}

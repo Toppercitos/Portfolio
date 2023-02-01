@@ -1,0 +1,65 @@
+.button-container {
+    width: 100%;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .btn-principal {
+        // Dimensions
+        width: 125px;
+        height: 75px;
+
+        //Positions
+        position: relative;
+        z-index: 998;
+
+        //Decorations
+        border-radius: 10px;
+        border: 1px solid $secundary-color;
+        background-color: $secundary-color;
+        color: 	$background-color;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight:700;
+        font-size: $paragraph_size_1;
+        margin: .4rem;
+
+        &:hover {
+            top: 15%;
+        }
+    }
+
+    .btn-border {
+        // Dimensions
+        width: 125px;
+        height: 75px;
+
+        //Position
+        position: absolute;
+        z-index: 997;
+        top: 15%;
+
+        //Decorations
+        border-radius: 10px;
+        border: 3px solid $secundary-color;
+        background-color: none;
+        margin: .4rem;
+    }
+
+    //Contact Section
+
+    .btn-contact {
+        @extend .btn-principal;
+        border-color: $contact-secundary-color;
+        background-color: $contact-secundary-color;
+        color: $background-color;
+    }
+
+    .btn-border-contact {
+        border-color: $contact-secundary-color;
+    }
+}
+

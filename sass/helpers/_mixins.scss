@@ -1,0 +1,17 @@
+@import "variables";
+
+@mixin title($title_color, $title_size) {
+    color: 	$title_color;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $title_size;
+}
+
+@mixin text($text_color, $text_weight, $text_size) {
+    color: $text_color;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: $text_weight;
+    font-size: $text_size;
+}

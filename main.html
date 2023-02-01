@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,700;1,700&family=Quicksand:wght@500;600;700&display=swap'); 
+    </style>
+    <script defer src="js/navbar.js"></script>
+    <script defer src="js/carrousel.js"></script>
+    <script src="https://kit.fontawesome.com/a5cd4284ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Portfolio Base</title>
+</head>
+<body>
+    <nav>
+        <ul class="menu-item">
+            <li><i class="fa-solid fa-bars fa-xl"></i></li>
+                
+                <ul class="menu-vertical">
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#approach"> Approach </a></li>
+                    <li><a href="#projects"> Projects </a></li>
+                    <li><a href="#knowledge"> Tools I Use </a></li>
+                    <li><a href="#contact" class="contact-tag">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="icons">
+            <i class="fa-solid fa-file-arrow-down fa-xl"></i>
+            <i class="fa-solid fa-message fa-xl"></i>
+        </div>  
+    </nav>
+
+    <div class="scroll-container">
+
+    <section id="home" class="home left-right">
+        <div class="home-container">
+            <h1>Hello there,<br>
+            I'm <em>Natalie</em>!</h1>
+            <h2>A developer from CDMX, Mexico.</h2>
+        </div>
+        <div class="home-container">
+            <div class="image-profile"></div>
+            <div class="image-border"></div>
+        </div>
+    </section>
+
+    <section id="approach" class="approach left-right">
+        <div class="approach-left">
+            <h1>Useful</h1>
+            <p>Lorem ipsum dolor sit Vamet, consectetur adipiscing elit. Maecenas id mi eget ante porttitor scelerisque id in lacus. 
+            Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod.</p>
+        </div>
+        <div class="approach-right">
+            <h1>Appealing</h1>
+            <p>Maecenas id mi eget ante porttitor scelerisque id in lacus. Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod. Integer non volutpat lacus. Donec fermentum sapien arcu.</p>
+        </div>
+    </section>
+
+   <section id="projects" class="projects">
+        <h1>Projects</h1>
+        <div class="carrousel">
+            <div class="carrousel-container">
+                <div class="project-card" id="project1">
+                    <div class="project-data on-left">
+                        <h1>Project 1</h1>
+                        <p>Maecenas id mi eget ante porttitor scelerisque id in lacus. Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod. Integer non volutpat lacus.</p>
+                        <div class="button-container">
+                            <button class="btn-principal">Let's see it!</button>
+                            <div class="btn-border"></div>
+                        </div> 
+                    </div>
+                    <div class="project-image">
+                    </div>
+                </div>
+
+                <div class="project-card" id="project-2">
+                    <div class="project-image">
+                    </div>
+                    <div class="project-data on-right">
+                        <h1>Project 2</h1>
+                        <p>Maecenas id mi eget ante porttitor scelerisque id in lacus. Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod. Integer non volutpat lacus.</p>
+                        <div class="button-container">
+                            <button class="btn-principal">Let's see it!</button>
+                            <div class="btn-border"></div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="project-card" id="project3">
+                    <div class="project-data on-left">
+                        <h1>Project 3</h1>
+                        <p>Maecenas id mi eget ante porttitor scelerisque id in lacus. Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod. Integer non volutpat lacus.</p>
+                        <div class="button-container">
+                            <button class="btn-principal">Let's see it!</button>
+                            <div class="btn-border"></div>
+                        </div> 
+                    </div>
+                    <div class="project-image">
+                    </div>
+                </div>
+            </div>
+            <ul class="slider">
+                <li class="dot active"><i class="fa-solid fa-circle fa-2x"></i></li>
+                <li class="dot"><i class="fa-solid fa-circle fa-2x"></i></li>
+                <li class="dot"><i class="fa-solid fa-circle fa-2x"></i></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="knowledge" class="knowledge up-down" >
+        <div class="knowledge_container">
+            <h1>Languages I Know</h1>
+            <div class="languages-container list">
+                <i class="fa-brands fa-html5 fa-4x"></i>
+                <i class="fa-brands fa-css3-alt fa-4x"></i>
+                <i class="fa-brands fa-sass fa-4x"></i>
+                <i class="fa-brands fa-js fa-4x"></i>
+                <i class="fa-brands fa-python fa-4x"></i>
+            </div>
+        </div>
+        <div class="knowledge_container">
+            <h1>Tools I use</h1>
+            <div class="tools-container list">
+                <i class="fa-brands fa-github fa-4x"></i>
+                <i class="fa-brands fa-git-alt fa-4x"></i>
+                <i class="fa-brands fa-stack-overflow fa-4x"></i>
+                <i class="fa-brands fa-figma fa-4x"></i>
+                <i class="fa-brands fa-bootstrap fa-4x"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact up-down">
+        <h1>Contact</h1>
+        <form action="https://formspree.io/f/xqkoazjg" method="POST">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="full-name">Your Name:</label> <br>
+                    <input type="text" placeholder="Enter your name" name="name" required="required">
+                </div>
+                <div class="input-group">
+                    <label for="email">Your Email:</label> <br>
+                    <input type="email" placeholder="Enter your email" name="email" required="required">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="message">Your Message:</label> <br>
+                    <textarea name="message" id="message" placeholder="What do you want me to work on? " cols="30" rows="5"></textarea>
+                </div> 
+            </div>
+            <input type="hidden" value="resources/pages/thanks.html">
+            <div class="button-container">
+                <button class="btn-principal btn-contact">Send</button>
+                <div class="btn-border btn-border-contact"></div>
+            </div> 
+            <div class="button-shadow"></div>
+        </form>
+    </section>
+    <footer>
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+        <i class="fa-brands fa-github fa-2xl"></i>
+    </footer>
+
+    </div>
+
+    
+</body>
+</html>
