@@ -7,9 +7,13 @@
     //Position
     position: relative;
     z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     //Transformations
     transform: rotate(45deg);
+    overflow: hidden;
 
     //Decorations
     border-radius: 1rem;

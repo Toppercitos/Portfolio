@@ -1,17 +1,16 @@
 //Colors
-$background-color: #303030; //hsla(0, 0%, 26%, 1);
-$principal-color: hsla(122, 100%, 75%, 1);
-$secundary-color: #FF6BD0; // hsla(88, 100%, 71%, 1);
+$background-color: #3C1362;
+$principal-color: 	#80ff84;
+$secundary-color: #FF6BD0;
 
-$neutral-color: hsla(90, 100%, 96%, 1);
-$contact-background-color: #8F0062;
-$contact-principal-color: #C9F227;
-$contact-secundary-color: #BAF73C;
+$neutral-color: #f6f2ff;
+$contact-emphasis-color: #DC093E;
+$contact-emphasis-color2: #7542FF;
 
 //Fonts Sizes
-$title_size_1: 3.5rem; 
-$subtitle_size_1: 2rem;
-$paragraph_size_1: 1rem;
+$title_size_1: 3rem; 
+$subtitle_size_1: 1.75rem;
+$paragraph_size_1: 1.25rem;
 
 // For Functions
 $sections: (up-down, left-right);

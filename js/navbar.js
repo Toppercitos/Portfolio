@@ -1,6 +1,9 @@
 const scrollContainer = document.querySelector(".scroll-container")
+const icons = document.querySelector(".icons")
 
-console.log(scrollContainer)
+const scrollThumb = document.querySelector("::-webkit-scrollbar")
+
+console.log(scrollThumb)
 
 scrollContainer.addEventListener("scroll", function () {
     const nav = document.querySelector("nav")
@@ -9,29 +12,22 @@ scrollContainer.addEventListener("scroll", function () {
     sections.forEach((section) => {
         if(section.id == "projects" || section.id == "knowledge" || section.id == "contact") {
             let sectionDistance = section.getBoundingClientRect().top
-            console.log(sectionDistance)
 
             if(sectionDistance <=0  && (section.id == "projects" || section.id == "knowledge")) {
                 nav.classList.add("special");
                 nav.classList.remove("contact-nav")
+                icons.style.display = "flex"
+
             } else if (sectionDistance <= 0 && section.id == "contact"){
                 nav.classList.add("contact-nav")
                 nav.classList.remove("special")
+                icons.style.display = "none"
+                scrollThumb.style.color = "$background-color"
             }
         } else {
                 nav.classList.remove("contact-nav")
                 nav.classList.remove("special")
+                icons.style.display = "flex"
         }
     })
-
-    //sections.forEach( (section, i) => {
-        //let sectionDistance = section.getBoundingClientRect().top
-
-        //if(sectionDistance <= 0 && (section.id == "home" || section.id == "knowledge" )) {
-        //    nav.classList.add("special")
-        //}
-        //else {
-        //    nav.classList.remove("special")
-        //}
-    //})
 });

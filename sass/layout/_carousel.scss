@@ -17,19 +17,21 @@
 
     h1 {
         color: $principal-color;
+        margin-bottom: 3rem;
     }
 
     .carrousel {
 
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 50%;
 
         overflow-x: hidden;
 
         .carrousel-container {
             width: 300%;
-            height: 90%;
-            padding: 2rem;
+            height: 100%;
+            padding:0px;
+
 
             display: flex;
             flex-direction: row nowrap;
@@ -41,7 +43,7 @@
             overflow: hidden;
 
             .project-card {
-                width: calc( (100%/3) - 2rem );
+                width: calc( 100%/3 );
                 height: 100%;
 
                 display: flex;
@@ -55,12 +57,34 @@
 
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
+                    justify-content: center;
                     align-items: center;
 
+                    margin: 1rem 2rem;
+
                     h1 {
+                        width: 100%;
+
+                        text-align: center;
+
                         color: $secundary-color;
-                        font-size: $subtitle_size_1;
+                        font-size: $subtitle_size_1 + .50rem;
+                        margin: 0px 0px .5rem 0px;
+                        padding: 0px;
+                    }
+
+                    p {
+                        height: 50%;
+
+                        overflow-y: scroll;
+
+                        text-align: justify;
+
+                        margin: 1rem 0px;
+                        padding: 1rem 1rem 1rem 0px;
+                    }
+
+                    .button-container {
                     }
                 }
     
@@ -68,7 +92,7 @@
 
                     width: 60%;
                     height: 100%;
-                    border: 1px solid $secundary-color;
+                    border: 3px solid $secundary-color;
                     border-radius: 1rem;
                     background-color: none;
 
@@ -76,25 +100,25 @@
                 }
             }
         }
-    
-        .slider {
-            width: 100%;
-            height: calc((100% - 90%) - 1rem );
+    }
 
-            display: flex;
-            flex-direction: row nowrap;
-            justify-content: center;
-            align-items: center;
+    .slider {
+        width: 80%;
+        height: 5%;
 
-            list-style: none;
+        display: flex;
+        flex-direction: row nowrap;
+        justify-content: center;
+        align-items: center;
 
-            .dot {
-                margin: 1rem;
-                color: $neutral-color;
+        list-style: none;
+        margin: 3rem 0px 0px 0px;
 
-                &.active {
-                    color: $principal-color;
-                }
+        .dot {
+            color: $neutral-color;
+            margin: 0px  1rem;
+            &.active {
+                color: $principal-color;
             }
         }
     }

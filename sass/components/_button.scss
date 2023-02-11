@@ -28,6 +28,10 @@
         margin: .4rem;
 
         &:hover {
+            color: $neutral-color;
+        }
+
+        &:active {
             top: 15%;
         }
     }
@@ -53,13 +57,17 @@
 
     .btn-contact {
         @extend .btn-principal;
-        border-color: $contact-secundary-color;
-        background-color: $contact-secundary-color;
-        color: $background-color;
+        border-color: $contact-emphasis-color;
+        background-color: $contact-emphasis-color;
+        color: $neutral-color;
+
+        &:hover {
+            color: $background-color;
+        }
     }
 
     .btn-border-contact {
-        border-color: $contact-secundary-color;
+        border-color: $contact-emphasis-color;
     }
 }
 

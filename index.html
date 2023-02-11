@@ -9,41 +9,46 @@
     </style>
     <script defer src="js/navbar.js"></script>
     <script defer src="js/carrousel.js"></script>
+    <script src= "js/icons.js"></script>
     <script src="https://kit.fontawesome.com/a5cd4284ac.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
     <title>Portfolio Base</title>
 </head>
 <body>
-    <nav>
-        <ul class="menu-item">
-            <li><i class="fa-solid fa-bars fa-xl"></i></li>
-                
-                <ul class="menu-vertical">
-                    <li><a href="#home"> Home </a></li>
-                    <li><a href="#approach"> Approach </a></li>
-                    <li><a href="#projects"> Projects </a></li>
-                    <li><a href="#knowledge"> Tools I Use </a></li>
-                    <li><a href="#contact" class="contact-tag">Contact</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="icons">
-            <i class="fa-solid fa-file-arrow-down fa-xl"></i>
-            <i class="fa-solid fa-message fa-xl"></i>
-        </div>  
-    </nav>
+    <header>
+        <nav>
+            <ul class="menu-item">
+                <li><i title="menu" class="fa-solid fa-bars fa-xl"></i></li>
+                    
+                    <ul class="menu-vertical">
+                        <li><a href="#home"> Home </a></li>
+                        <li><a href="#approach"> Approach </a></li>
+                        <li><a href="#projects"> Projects </a></li>
+                        <li><a href="#knowledge"> Tools I Use </a></li>
+                        <li><a href="#contact" class="contact-tag">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="icons">
+                <a href="resources/prototype_file1.txt" download="CV"><i title="Curriculum Vitae" class="fa-solid fa-id-badge fa-xl"></i></a>
+                <a href="#contact"><i title="Send me a message!" class="fa-solid fa-message fa-xl"></i></a>
+            </div>  
+        </nav>
+    </header>
+    
 
     <div class="scroll-container">
 
     <section id="home" class="home left-right">
         <div class="home-container">
-            <h1>Hello there,<br>
-            I'm <em>Natalie</em>!</h1>
-            <h2>A developer from CDMX, Mexico.</h2>
+            <div class="image-profile">
+            </div>
+            <div class="image-border"></div>
         </div>
         <div class="home-container">
-            <div class="image-profile"></div>
-            <div class="image-border"></div>
+            <h1>Hello there,<br>
+            I'm <em>Natalie</em>!</h1>
+            <h2>A developer from CDMX.</h2>
         </div>
     </section>
 
@@ -60,12 +65,12 @@
     </section>
 
    <section id="projects" class="projects">
-        <h1>Projects</h1>
+        <h1>Wanna see some of my work?</h1>
         <div class="carrousel">
             <div class="carrousel-container">
                 <div class="project-card" id="project1">
-                    <div class="project-data on-left">
-                        <h1>Project 1</h1>
+                    <div class="project-data">
+                        <h2>Project 1</h2>
                         <p>Maecenas id mi eget ante porttitor scelerisque id in lacus. Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod. Integer non volutpat lacus.</p>
                         <div class="button-container">
                             <button class="btn-principal">Let's see it!</button>
@@ -79,8 +84,8 @@
                 <div class="project-card" id="project-2">
                     <div class="project-image">
                     </div>
-                    <div class="project-data on-right">
-                        <h1>Project 2</h1>
+                    <div class="project-data">
+                        <h2>Project 2</h2>
                         <p>Maecenas id mi eget ante porttitor scelerisque id in lacus. Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod. Integer non volutpat lacus.</p>
                         <div class="button-container">
                             <button class="btn-principal">Let's see it!</button>
@@ -90,8 +95,8 @@
                 </div>
 
                 <div class="project-card" id="project3">
-                    <div class="project-data on-left">
-                        <h1>Project 3</h1>
+                    <div class="project-data">
+                        <h2>Project 3</h2>
                         <p>Maecenas id mi eget ante porttitor scelerisque id in lacus. Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod. Integer non volutpat lacus.</p>
                         <div class="button-container">
                             <button class="btn-principal">Let's see it!</button>
@@ -102,33 +107,33 @@
                     </div>
                 </div>
             </div>
-            <ul class="slider">
-                <li class="dot active"><i class="fa-solid fa-circle fa-2x"></i></li>
-                <li class="dot"><i class="fa-solid fa-circle fa-2x"></i></li>
-                <li class="dot"><i class="fa-solid fa-circle fa-2x"></i></li>
-            </ul>
         </div>
+        <ul class="slider">
+            <li class="dot active"><i class="fa-solid fa-circle fa-1x"></i></li>
+            <li class="dot"><i class="fa-solid fa-circle fa-1x"></i></li>
+            <li class="dot"><i class="fa-solid fa-circle fa-1x"></i></li>
+        </ul>
     </section>
 
     <section id="knowledge" class="knowledge up-down" >
         <div class="knowledge_container">
             <h1>Languages I Know</h1>
             <div class="languages-container list">
-                <i class="fa-brands fa-html5 fa-4x"></i>
-                <i class="fa-brands fa-css3-alt fa-4x"></i>
-                <i class="fa-brands fa-sass fa-4x"></i>
-                <i class="fa-brands fa-js fa-4x"></i>
-                <i class="fa-brands fa-python fa-4x"></i>
+                <i title="HTML5" class="fa-brands fa-html5 fa-4x knowledge-icons"></i>
+                <i title="CSS3" class="fa-brands fa-css3-alt fa-4x knowledge-icons"></i>
+                <i title="Sass" class="fa-brands fa-sass fa-4x knowledge-icons"></i>
+                <i title="JavaScript" class="fa-brands fa-js fa-4x knowledge-icons"></i>
+                <i title="Python" class="fa-brands fa-python fa-4x knowledge-icons"></i>
             </div>
         </div>
         <div class="knowledge_container">
             <h1>Tools I use</h1>
             <div class="tools-container list">
-                <i class="fa-brands fa-github fa-4x"></i>
-                <i class="fa-brands fa-git-alt fa-4x"></i>
-                <i class="fa-brands fa-stack-overflow fa-4x"></i>
-                <i class="fa-brands fa-figma fa-4x"></i>
-                <i class="fa-brands fa-bootstrap fa-4x"></i>
+                <i title="Github" class="fa-brands fa-github fa-4x knowledge-icons"></i>
+                <i title="Git" class="fa-brands fa-git-alt fa-4x knowledge-icons"></i>
+                <i title="Stack Overflow" class="fa-brands fa-stack-overflow fa-4x knowledge-icons"></i>
+                <i title="Figma" class="fa-brands fa-figma fa-4x knowledge-icons"></i>
+                <i title="Bootstrap" class="fa-brands fa-bootstrap fa-4x knowledge-icons"></i>
             </div>
         </div>
     </section>
@@ -162,8 +167,9 @@
     </section>
     
     <footer>
-        <i class="fa-brands fa-linkedin fa-2xl"></i>
-        <i class="fa-brands fa-github fa-2xl"></i>
+        <a href="resources/prototype_file1.txt" download="CV"><i title="Curriculum Vitae"class="fa-solid fa-id-badge fa-2xl contact-icons"></i></a>
+        <a href="#home"><i title="LinkedIn" class="fa-brands fa-linkedin fa-2xl contact-icons"></i></a>
+        <a href="https://github.com/Toppercitos"><i title="Github" class="fa-brands fa-github fa-2xl contact-icons"></i></a>
     </footer>
     
     </div>

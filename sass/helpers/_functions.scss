@@ -13,16 +13,3 @@
         }
     }
 }
-
-@each $item in $projects-data{
-    @if ($item == "on-left") {
-        .#{$item}{
-            padding: 0px 3rem 0px 1rem;
-        }
-    }
-    @else {
-        .#{$item}{
-            padding: 0px 1rem 0px 3rem;
-        }
-    }
-}

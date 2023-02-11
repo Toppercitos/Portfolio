@@ -1,10 +1,10 @@
 .contact {
-    background-color: $contact-background-color;
+    background-color: $neutral-color;
 
     h1 {
         padding: .2rem;
         margin: .3rem;
-        color: $contact-principal-color;
+        color: $background-color;
     }
 
     form{
@@ -30,7 +30,7 @@
     }
 
     label {
-        @include text($contact-principal-color, 700, $paragraph_size_1);
+        @include text($background-color, 700, $paragraph_size_1);
 
     }
 
