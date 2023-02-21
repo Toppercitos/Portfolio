@@ -1,8 +1,8 @@
 nav {
     // Dimensions
     width: 100%;
-    min-height: 6vh;
-    padding: 2% 4%;
+    min-height: 8vh;
+    padding: 4% 4%;
 
     //Position 
     position: fixed;
@@ -40,7 +40,7 @@ nav {
                 padding: .2rem 1rem;
 
                 text-decoration: none;
-                @include text($secundary-color, 700, $paragraph_size_1);
+                @include text($secundary-color, 700, map-get($paragraph_size, "medium screen"));
 
                 &:hover {
                     color: $neutral-color;
@@ -53,7 +53,7 @@ nav {
         }
     }
 
-    .icons {
+    .icon-box-1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -69,32 +69,22 @@ nav {
             }
         }
 
-        i {
-            padding-left: 1rem;
-            color: $secundary-color;
-
-            &:hover {
-                color: $neutral-color;
-            }
-        }
-
-    }
-}
-
-.special {
-    .menu-item {
-        color: $principal-color;
-        .menu-vertical {
-            background-color: $background-color;
-            a {
-                color: $principal-color;
-            }
-        }
     }
 
-    .icons {
-        i{
-            color: $principal-color;
+    .icon-box-2 {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            i {
+                padding-left: 1rem;
+                color: $background-color;
+
+                &:hover {
+                    color: $contact-emphasis-color;
+                }
+            }
         }
     }
 }
@@ -113,9 +103,4 @@ nav {
             }
         }
     }
-}
-
-
-.hidden {
-    display: none;
 }

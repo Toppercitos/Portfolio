@@ -1,10 +1,3 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
-}
-
 .projects {
 
     width: 100%;
@@ -17,6 +10,7 @@
 
     h1 {
         color: $principal-color;
+        text-align: center;
         margin-bottom: 3rem;
     }
 
@@ -45,6 +39,7 @@
             .project-card {
                 width: calc( 100%/3 );
                 height: 100%;
+                margin: 0px .5rem;
 
                 display: flex;
                 flex-direction: row nowrap;
@@ -57,31 +52,25 @@
 
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: space-around;
                     align-items: center;
 
                     margin: 1rem 2rem;
 
-                    h1 {
+                    h2 {
                         width: 100%;
-
                         text-align: center;
-
-                        color: $secundary-color;
-                        font-size: $subtitle_size_1 + .50rem;
-                        margin: 0px 0px .5rem 0px;
-                        padding: 0px;
                     }
 
                     p {
-                        height: 50%;
+                        height: 40%;
 
                         overflow-y: scroll;
 
                         text-align: justify;
 
-                        margin: 1rem 0px;
-                        padding: 1rem 1rem 1rem 0px;
+                        margin: .5rem;
+                        padding: 1rem;
                     }
 
                     .button-container {
@@ -117,6 +106,11 @@
         .dot {
             color: $neutral-color;
             margin: 0px  1rem;
+
+            &:hover {
+                color: $secundary-color;
+            }
+            
             &.active {
                 color: $principal-color;
             }

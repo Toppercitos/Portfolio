@@ -18,21 +18,26 @@
     <header>
         <nav>
             <ul class="menu-item">
-                <li><i title="menu" class="fa-solid fa-bars fa-xl"></i></li>
+                <li><i title="menu" class="fa-solid fa-bars fa-2xl"></i></li>
                     
                     <ul class="menu-vertical">
                         <li><a href="#home"> Home </a></li>
-                        <li><a href="#approach"> Approach </a></li>
-                        <li><a href="#projects"> Projects </a></li>
+                        <li><a href="#approach"> The Approach </a></li>
+                        <li><a href="#projects"> My Work </a></li>
                         <li><a href="#knowledge"> Tools I Use </a></li>
                         <li><a href="#contact" class="contact-tag">Contact</a></li>
                     </ul>
                 </li>
             </ul>
-            <div class="icons">
-                <a href="resources/prototype_file1.txt" download="CV"><i title="Curriculum Vitae" class="fa-solid fa-id-badge fa-xl"></i></a>
-                <a href="#contact"><i title="Send me a message!" class="fa-solid fa-message fa-xl"></i></a>
-            </div>  
+            <div class="icon-box-1">
+                <a href="#contact"><i title="Send me a message!" class="fa-solid fa-message fa-2xl"></i></a>
+                <a href="resources/prototype_file1.txt" download="CV"><i title="Curriculum Vitae" class="fa-solid fa-id-badge fa-2xl"></i></a>
+            </div> 
+            <div class="icon-box-2">
+                <a href="#home"><i title="LinkedIn" class="fa-brands fa-linkedin fa-2xl contact-icons"></i></a>
+                <a href="https://github.com/Toppercitos"><i title="Github" class="fa-brands fa-github fa-2xl contact-icons"></i></a>
+                <a href="resources/prototype_file1.txt" download="CV"><i title="Curriculum Vitae"class="fa-solid fa-id-badge fa-2xl contact-icons"></i></a>
+            </div> 
         </nav>
     </header>
     
@@ -40,14 +45,14 @@
     <div class="scroll-container">
 
     <section id="home" class="home left-right">
-        <div class="home-container">
+        <div class="home-container image-container">
             <div class="image-profile">
             </div>
             <div class="image-border"></div>
         </div>
-        <div class="home-container">
+        <div class="home-container text-container">
             <h1>Hello there,<br>
-            I'm <em>Natalie</em>!</h1>
+            I'm <em>Natalia</em>!</h1>
             <h2>A developer from CDMX.</h2>
         </div>
     </section>
@@ -55,20 +60,21 @@
     <section id="approach" class="approach left-right">
         <div class="approach-left">
             <h1>Useful</h1>
-            <p>Lorem ipsum dolor sit Vamet, consectetur adipiscing elit. Maecenas id mi eget ante porttitor scelerisque id in lacus. 
-            Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod.</p>
+            <p>Functionality oriented to the needs of the brand. Everything so that the user can have the utmost experience and concentrate on what matters: <em>The Product</em>.</p>
         </div>
         <div class="approach-right">
             <h1>Appealing</h1>
-            <p>Maecenas id mi eget ante porttitor scelerisque id in lacus. Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod. Integer non volutpat lacus. Donec fermentum sapien arcu.</p>
+            <p>Every brand is unique. The web page that represents it must understand and expresses what the brand wants in the best manner. This way users will easily empathize with it.</p>
         </div>
     </section>
 
    <section id="projects" class="projects">
-        <h1>Wanna see some of my work?</h1>
+        <h1>Wanna see my work?</h1>
         <div class="carrousel">
             <div class="carrousel-container">
                 <div class="project-card" id="project1">
+                    <div class="project-image">
+                    </div>
                     <div class="project-data">
                         <h2>Project 1</h2>
                         <p>Maecenas id mi eget ante porttitor scelerisque id in lacus. Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod. Integer non volutpat lacus.</p>
@@ -76,8 +82,6 @@
                             <button class="btn-principal">Let's see it!</button>
                             <div class="btn-border"></div>
                         </div> 
-                    </div>
-                    <div class="project-image">
                     </div>
                 </div>
 
@@ -95,6 +99,8 @@
                 </div>
 
                 <div class="project-card" id="project3">
+                    <div class="project-image">
+                    </div>
                     <div class="project-data">
                         <h2>Project 3</h2>
                         <p>Maecenas id mi eget ante porttitor scelerisque id in lacus. Phasellus vitae nisl sit amet nulla maximus sodales vel vel turpis. Curabitur suscipit ex ut ultricies euismod. Integer non volutpat lacus.</p>
@@ -103,20 +109,18 @@
                             <div class="btn-border"></div>
                         </div> 
                     </div>
-                    <div class="project-image">
-                    </div>
                 </div>
             </div>
         </div>
         <ul class="slider">
-            <li class="dot active"><i class="fa-solid fa-circle fa-1x"></i></li>
-            <li class="dot"><i class="fa-solid fa-circle fa-1x"></i></li>
-            <li class="dot"><i class="fa-solid fa-circle fa-1x"></i></li>
+            <li class="dot active"><i class="fa-solid fa-circle fa-xl"></i></li>
+            <li class="dot"><i class="fa-solid fa-circle fa-xl"></i></li>
+            <li class="dot"><i class="fa-solid fa-circle fa-xl"></i></li>
         </ul>
     </section>
 
     <section id="knowledge" class="knowledge up-down" >
-        <div class="knowledge_container">
+        <div class="knowledge-container">
             <h1>Languages I Know</h1>
             <div class="languages-container list">
                 <i title="HTML5" class="fa-brands fa-html5 fa-4x knowledge-icons"></i>
@@ -126,7 +130,7 @@
                 <i title="Python" class="fa-brands fa-python fa-4x knowledge-icons"></i>
             </div>
         </div>
-        <div class="knowledge_container">
+        <div class="knowledge-container">
             <h1>Tools I use</h1>
             <div class="tools-container list">
                 <i title="Github" class="fa-brands fa-github fa-4x knowledge-icons"></i>
@@ -154,7 +158,7 @@
             <div class="form-row">
                 <div class="input-group">
                     <label for="message">Your Message:</label> <br>
-                    <textarea name="message" id="message" placeholder="What do you want me to work on? " cols="30" rows="5"></textarea>
+                    <textarea name="message" id="message" placeholder="What do you want me to work on? " cols="30" rows="4"></textarea>
                 </div> 
             </div>
             <input type="hidden" value="resources/pages/thanks.html">
@@ -165,13 +169,6 @@
             <div class="button-shadow"></div>
         </form>
     </section>
-    
-    <footer>
-        <a href="resources/prototype_file1.txt" download="CV"><i title="Curriculum Vitae"class="fa-solid fa-id-badge fa-2xl contact-icons"></i></a>
-        <a href="#home"><i title="LinkedIn" class="fa-brands fa-linkedin fa-2xl contact-icons"></i></a>
-        <a href="https://github.com/Toppercitos"><i title="Github" class="fa-brands fa-github fa-2xl contact-icons"></i></a>
-    </footer>
-    
     </div>
 
     

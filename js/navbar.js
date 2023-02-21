@@ -1,9 +1,6 @@
-const scrollContainer = document.querySelector(".scroll-container")
-const icons = document.querySelector(".icons")
-
-const scrollThumb = document.querySelector("::-webkit-scrollbar")
-
-console.log(scrollThumb)
+const scrollContainer = document.querySelector(".scroll-container");
+const iconBox1 = document.querySelector(".icon-box-1");
+const iconBox2 = document.querySelector(".icon-box-2");
 
 scrollContainer.addEventListener("scroll", function () {
     const nav = document.querySelector("nav")
@@ -11,23 +8,17 @@ scrollContainer.addEventListener("scroll", function () {
 
     sections.forEach((section) => {
         if(section.id == "projects" || section.id == "knowledge" || section.id == "contact") {
-            let sectionDistance = section.getBoundingClientRect().top
+            let sectionDistance = section.getBoundingClientRect().top;
 
-            if(sectionDistance <=0  && (section.id == "projects" || section.id == "knowledge")) {
-                nav.classList.add("special");
-                nav.classList.remove("contact-nav")
-                icons.style.display = "flex"
-
-            } else if (sectionDistance <= 0 && section.id == "contact"){
-                nav.classList.add("contact-nav")
-                nav.classList.remove("special")
-                icons.style.display = "none"
-                scrollThumb.style.color = "$background-color"
+            if (sectionDistance <= 0 && section.id == "contact"){
+                nav.classList.add("contact-nav");
+                iconBox1.style.display = "none";
+                iconBox2.style.display = "flex";
             }
         } else {
-                nav.classList.remove("contact-nav")
-                nav.classList.remove("special")
-                icons.style.display = "flex"
+                nav.classList.remove("contact-nav");
+                iconBox1.style.display = "flex";
+                iconBox2.style.display = "none";
         }
     })
 });

@@ -1,6 +1,6 @@
 .knowledge {
 
-    .knowledge_container {
+    .knowledge-container {
         box-sizing: border-box;
         margin: 1rem;
         padding: 0px;
@@ -9,6 +9,8 @@
         h1{
             display: flex;
             justify-content: center;
+
+            text-align: center;
             padding: 1rem;
             margin: 0px;
         }

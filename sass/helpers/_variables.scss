@@ -8,10 +8,26 @@ $contact-emphasis-color: #DC093E;
 $contact-emphasis-color2: #7542FF;
 
 //Fonts Sizes
-$title_size_1: 3rem; 
-$subtitle_size_1: 1.75rem;
-$paragraph_size_1: 1.25rem;
+$title-size: (
+    "medium screen" : 5rem,
+    "tablet" : 3rem,
+    "cellphone" : 2rem,
+    "minicellphone" : 1.5rem,
+); 
+
+$subtitle-size: (
+    "medium screen" : 3rem,
+    "tablet" : 2rem,
+    "cellphone" : 1.25rem,
+    "mini-cellphone" : 1rem,
+);
+
+$paragraph-size: (
+    "medium screen" : 1.75em,
+    "tablet" : 1.25rem,
+    "cellphone-contact" : .9rem,
+    "cellphone" : .75rem,
+);
 
 // For Functions
 $sections: (up-down, left-right);
-$projects-data: (on-left, on-right);

@@ -1,40 +1,45 @@
-.image-profile{
-
-    //Dimensions
-    width: 40vh;
-    height: 40vh;
-
-    //Position
-    position: relative;
-    z-index: 998;
+.image-container {
+    width: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    //Transformations
-    transform: rotate(45deg);
-    overflow: hidden;
+    .image-profile{
 
-    //Decorations
-    border-radius: 1rem;
-    border: 3px solid $background-color;
-    background-color: $neutral-color;
-}
-
-.image-border {
-    //Dimensions
-    width: 40vh;
-    height: 40vh;
-
-    //Position
-    position: absolute;
-    z-index: 997;
-    top: 10%;
-    //Transformations
-    transform: rotate(45deg);
-
-    //Decorations
-    border-radius: 1rem;
-    border: 3px solid $background-color;
-    background-color: $principal-color;
+        //Dimensions
+        width: 35vh;
+        height: 35vh;
+    
+        //Position
+        position: relative;
+        z-index: 998;
+    
+        //Transformations
+        transform: rotate(45deg);
+        overflow: hidden;
+    
+        //Decorations
+        border-radius: 1rem;
+        border: 3px solid $background-color;
+        background-color: $neutral-color;
+    }
+    
+    .image-border {
+        //Dimensions
+        width: 35vh;
+        height: 35vh;
+    
+        //Position
+        position: absolute;
+        z-index: 997;
+        top: 10%;
+        //Transformations
+        transform: rotate(45deg);
+    
+        //Decorations
+        border-radius: 1rem;
+        border: 3px solid $background-color;
+        background-color: $principal-color;
+    }
 }

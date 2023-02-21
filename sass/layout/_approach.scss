@@ -1,18 +1,18 @@
 .approach {
-
     width: 80%;
-    
     .approach-left {
 
         //Dimensions
+        width: 50%;
         height: 80vh;
         margin: 0% 0%;
-        padding: 10% 1rem;
+        padding: 5% 1rem;
 
         //Position
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: flex-start;
 
         h1{
             margin: 0.2rem 0rem;
@@ -22,14 +22,16 @@
     .approach-right {
 
         //Dimensions
+        width: 50%;
         height: 80vh;
         margin: 0% 0%;
-        padding: 10% 1rem;
+        padding: 5% 1rem;
 
         //Position
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        align-items: flex-start;
 
         h1{
             margin: 0.2rem 0rem;

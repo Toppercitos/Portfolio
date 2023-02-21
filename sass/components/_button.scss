@@ -7,10 +7,12 @@
     justify-content: center;
     align-items: center;
 
+    margin: .5rem;
+
     .btn-principal {
         // Dimensions
-        width: 125px;
-        height: 75px;
+        width: 150px;
+        height: 100px;
 
         //Positions
         position: relative;
@@ -24,8 +26,8 @@
         font-family: 'Quicksand';
         font-style: normal;
         font-weight:700;
-        font-size: $paragraph_size_1;
-        margin: .4rem;
+        font-size: map-get($paragraph-size, "medium screen");
+        padding: .2rem;
 
         &:hover {
             color: $neutral-color;
@@ -38,8 +40,8 @@
 
     .btn-border {
         // Dimensions
-        width: 125px;
-        height: 75px;
+        width: 150px;
+        height: 100px;
 
         //Position
         position: absolute;
@@ -50,7 +52,6 @@
         border-radius: 10px;
         border: 3px solid $secundary-color;
         background-color: none;
-        margin: .4rem;
     }
 
     //Contact Section
